@@ -50,7 +50,7 @@ startButton.addEventListener("click", function () {
 boardValue.name = prompt('what is your pet name');
 shell.classList.remove("shel")
     shell.className = "shell"
-    // img.src = "C:\Users\James\Pictures\Project folder\My project (1.5).png";
+    shell.src = "./img/My project (1.5).png";
 // the line of code below adds 1 to the scoreboard that is exhausting
 // there is also an if & if else statement that will send an alert if sleep reaches 10 or stop interval
 const sleepAdd = setInterval( () => {
@@ -102,12 +102,12 @@ const turtleAdd = setInterval( () => {
   if (turtleAge === 8)
    {shell.classList.remove("shell")
     shell.className = "smallturtle";
-    // shell.src = "C:\Users\James\Pictures\Project folder\My project (3).png";
-    //alert("your turtle is an adult")
-  } else if (turtleAge === 8)
+    shell.src = "./img/My project (3).png";
+    alert("your turtle is an adult")
+  } else if (turtleAge === 15)
   {shell.classList.remove("smallturtle")
    shell.className = "bigturtle";
-//    shell.src = "C:\Users\James\Pictures\Project folder\My project (4).png"
+   shell.src = "./img/My project (4).png"
   } else if (boardValue.boredom === 10){
     clearInterval(turtleAdd)
   } else if (boardValue.sleep === 10){
